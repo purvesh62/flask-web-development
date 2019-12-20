@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    {% if title %}
-      <title>Flask Blog - {{title}}</title>
-    {% else %}
-      <title>Flask Blog</title>
-    {% endif %}
-  </head>
-  <body>
+{% extends 'layout.html' %}
+{% block content %}
     <h1>About Page</h1>
-    <a href="http://127.0.0.1:5000/">Back to home</a>
-  </body>
-</html>
+    <a href="http://127.0.0.1:5000/">Home</a>
+{% endblock content %}
