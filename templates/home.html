@@ -1,16 +1,9 @@
-{% extends 'layout.html' %}
+{% extends "base.html" %}
 {% block content %}
-    {% for post in posts %}
-    <article class="media content-section">
-      <div class="media-body">
-      <div class="article-metadata">
-        <a class="mr-2" href="#">{{ post.author }}</a>
-        <small class="text-muted">{{ post.date_posted }}</small>
-      </div>
-      <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
-      <p class="article-content">{{ post.content }}</p>
-      </div>
-    </article>
-    {% endfor %}
-    <a href="http://127.0.0.1:5000/about">About</a>
-{% endblock content %}
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Package Delivery Manager</h1>
+            <p class="col-md-8 fs-4">Welcome to the package manager homepage. Select a link from the Navigation Bar above.</p>
+        </div>
+    </div>
+{% endblock %}
